@@ -1,0 +1,5 @@
+# Webstorm Files
+.idea
+server/.idea
+tsc
+tsserver
