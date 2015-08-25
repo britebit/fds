@@ -1,19 +1,11 @@
 {
-    "jsonrpc":"2.0",
-    "method":"calculate",
-    "params":{
-        "emailAddress":"joe@bloggs.com",
-        "shippingAddress":"some shipping address",
-        "shippingCity":"some shipping city",
-        "billingCity":"some billing city",
-        "orderDate":{
-            "day":31,
-            "month":12,
-            "year":2014
-        },
-        "totalOrderQuantity":5,
-        "iso4217Currency":"GBP",
-        "orderSubtotal":99.99
-    },
-    "id": 1
+  "billingEmailAddress": "joe@bloggs.com",
+  "billingCity": "some billing city",
+  "shippingAddress": "some shipping address",
+  "shippingCity": "some shipping city",
+  "orderDate": "2015-12-31T08:15:30Z05:00",
+  "totalOrderQuantity": 5,
+  "currency": "GBP",
+  "orderTotal": 99.99,
+  "fraudScoreFormat": "fraud"
 }

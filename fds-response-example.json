@@ -1,0 +1,27 @@
+{
+    "fraudDetectionScore":80,
+    "fraudScoreComponents":[
+      {
+        "componentName":"Billing Email",
+        "invalidEmail": 2,
+        "bannedEmail": 1
+      },
+      {
+        "componentName":"Billing Address",
+        "orderCountToday": 2,
+        "cityCountForBillingEmail": 1
+      },
+      {
+        "componentName":"Cart Content",
+        "orderValue": 1,
+        "orderQuantity": 5,
+        "uniqueItemCount":2
+      },
+      {
+        "componentName":"Shipping Address",
+        "matchesBillingAddress": 0,
+        "ordersPlacedInTimePeriodCount": 1,
+        "totalBillingEmailsForAddress":10
+      }
+    ]
+}
