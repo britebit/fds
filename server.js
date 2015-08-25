@@ -1,5 +1,5 @@
 /*
- * Created by Gordon on 11/08/2015.
+ * Created by Gordon Barrs on 11/08/2015.
  */
 /// <reference path="type_definitions\express\express.d.ts"/>
 /// <reference path="type_definitions\body-parser\body-parser.d.ts"/>
@@ -18,13 +18,10 @@ var router = express.Router();
 app.use('/api', router);
 router.get('/', function (request, response) {
     response.json({
-        serviceName: "Elsevier Fraud Service",
+        serviceName: "My Service",
         version: "v0.1.0"
     });
 });
-// GB: Need to work out how to get the express.Router reference in the RouteFactory
-// var routeFactory = new RouteFactory();
-//routeFactory.SetRoutes(app.Router());//app.Router() is the same as express.Router()
 app.listen(port);
 console.log('Server running ...');
 //# sourceMappingURL=server.js.map

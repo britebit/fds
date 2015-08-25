@@ -1,5 +1,5 @@
 /*
- * Created by Gordon on 11/08/2015.
+ * Created by Gordon Barrs on 11/08/2015.
  */
 /// <reference path="type_definitions\express\express.d.ts"/>
 /// <reference path="type_definitions\body-parser\body-parser.d.ts"/>
@@ -22,7 +22,6 @@ var router = express.Router();
 
 // All routes will be prefixed with 'api'
 app.use('/api',router);
-
 
 router.get('/', function (request,response){
         response.json({
